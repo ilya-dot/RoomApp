@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vw"
+            type="com.example.roomapp.KeyMW" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextTextKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Key" />
+
+    <EditText
+        android:id="@+id/editTextTextValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Value" />
+
+    <Button
+        android:id="@+id/buttonGetByKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(view)->view.insertKeyToLocalDb()}"
+        android:text="Get by key" />
+
+    <Button
+        android:id="@+id/buttonAddKeyValuePair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add key value pair" />
+
+    <Button
+        android:id="@+id/buttonUpdateKeyValuePair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update key value key" />
+
+    <Button
+        android:id="@+id/buttonDeleteByKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete by key" />
+
+    <Button
+        android:id="@+id/buttonDeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete all" />
+</LinearLayout>
+</layout>
